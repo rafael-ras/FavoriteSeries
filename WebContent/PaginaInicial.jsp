@@ -8,22 +8,33 @@
 	<script type="text/javascript" src="script/jquery-2.1.4.min.js"></script>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$('.myCarousel').carousel();
+	</script>
+	
 </head>
 <body>
 	<form action="PaginaInicialController">
 		<div style="width: 100%; height: 150px; background-color: #04B404;">
+			<div style="padding-left: 60px; /* line-height: 150px; */ padding-top: 52px;">
+				<p style="font-family: Times New Roman, Times, serif; color: #FFFFFF; font-size: 21pt; float: left; background-color: gray; /* height: 91px; */ padding: 0 7px 0 7px; margin-right: 6px;">
+					FS
+				</p>
+				<p style="font-family: Times New Roman, Times, serif; color:#FFFFFF; font-size:21pt;">
+					FavoriteSeries
+				</p>					
+			</div>
 			
 		</div>
 		<div style="width: 100%; height: 150px; background-color: #A4A4A4;">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
+			  
 			  <ol class="carousel-indicators">
 			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			    <li data-target="#myCarousel" data-slide-to="1"></li>
 			    <li data-target="#myCarousel" data-slide-to="2"></li>
 			  </ol>
-			
-			  <!-- Wrapper for slides -->
+						  
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
 			      <img src="img/banner1.jpg" alt="Chania">
@@ -37,8 +48,7 @@
 			      <img src="img/banner3.png" alt="Chania">
 			    </div>
 			  </div>
-			
-			  <!-- Left and right controls -->
+						  
 			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			    <span class="sr-only">Previous</span>
