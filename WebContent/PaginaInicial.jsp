@@ -8,14 +8,36 @@
 	<script type="text/javascript" src="script/jquery-2.1.4.min.js"></script>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="style/site.css" rel="stylesheet" type="text/css" />
 	<script>
 		$('.myCarousel').carousel();
 	</script>
-	
+	<style type="text/css">
+		html,body{height:100%;}
+		.carousel,.item,.active{height:100%;}
+		.carousel-inner{height:100%;}
+		.fill{width:100%;height:100%;background-position:center;background-size:cover;}
+		
+		/* faster sliding speed */
+		.carousel-inner > .item {
+		    -webkit-transition: 0.3s ease-in-out left;
+		    -moz-transition: 0.3s ease-in-out left;
+		    -o-transition: 0.3s ease-in-out left;
+		    transition: 0.3s ease-in-out left;
+		}
+
+		/* keep full widget on smaller screens */
+		@media (max-width: 767px) { 
+			body {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	</style>
 </head>
 <body>
-	<form action="PaginaInicialController">
-		<div style="width: 100%; height: 150px; background-color: #04B404;">
+	
+		<div style="width: 100%; height: 22%; background-color: #000000;">
 			<div style="padding-left: 60px; /* line-height: 150px; */ padding-top: 52px;">
 				<p style="font-family: Times New Roman, Times, serif; color: #FFFFFF; font-size: 21pt; float: left; background-color: gray; /* height: 91px; */ padding: 0 7px 0 7px; margin-right: 6px;">
 					FS
@@ -23,30 +45,30 @@
 				<p style="font-family: Times New Roman, Times, serif; color:#FFFFFF; font-size:21pt;">
 					FavoriteSeries
 				</p>					
-			</div>
-			
+			</div>			
 		</div>
-		<div style="width: 100%; height: 150px; background-color: #A4A4A4;">
+		
+		<div class="container fill" style="margin: 0px; margin-top: 0px; padding: 0px; height: 78% !important;">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			  
-			  <ol class="carousel-indicators">
+			  <!--  <ol class="carousel-indicators">
 			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			    <li data-target="#myCarousel" data-slide-to="1"></li>
 			    <li data-target="#myCarousel" data-slide-to="2"></li>
-			  </ol>
+			  </ol>-->
 						  
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img src="img/banner1.jpg" alt="Chania">
+	          		<img src="img/banner1.jpg" style="width:100%; height:100%;" class="responsive">			          
 			    </div>
 			
-			    <div class="item">
-			      <img src="img/banner2.jpg" alt="Chania">
-			    </div>
+			   	<div class="item">
+		          	<img src="img/banner2.jpg" style="width:100%; height:100%;" class="responsive">			          
+		    	</div>
 			    
 			    <div class="item">
-			      <img src="img/banner3.png" alt="Chania">
-			    </div>
+		          	<img src="img/banner3.jpg" style="width:100%; height:100%;" class="responsive">			          
+		    	</div>
 			  </div>
 						  
 			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -59,6 +81,6 @@
 			  </a>
 			</div>
 		</div>		
-	</form>
+	
 </body>
 </html>
