@@ -27,6 +27,32 @@
 	font-size: 30px; 
 	margin: 35px 0 40px 0;
 }
+/***** indicações*****/
+
+
+.carousel-inner{
+	left:80px;
+	width: 90%;
+	height: 400px;
+}
+
+.col-lg-6{
+	left:350px;
+	
+}
+
+.titulos{
+	width: 100%; 
+	text-align: center; 
+	font-size: 30px; 
+	margin: 35px 0 40px 0;	
+}
+
+.rodape{
+	margin: 204px 561px 10px;
+}
+
+
 
 
 /* 
