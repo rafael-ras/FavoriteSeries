@@ -25,12 +25,10 @@
 		}
 	</style>
 </head>
-<body style="background-color:#000000;">
+<body style="background-color:#000000;color:white;">
 	<jsp:include page="/Header.jspf"/>
 	
-	<div style="width: 100%; text-align: center; font-size: 30px; margin: 35px 0 40px 0;">
-		Indicações	
-	</div>
+	<div class="titulos">Indicações	</div>
 	
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	
@@ -40,7 +38,6 @@
 		    <li data-target="#myCarousel" data-slide-to="1"></li>
 		    <li data-target="#myCarousel" data-slide-to="2"></li>
 		    <li data-target="#myCarousel" data-slide-to="3"></li>
-		    <li data-target="#myCarousel" data-slide-to="4"></li>
 		  </ol>
 		
 		  <!-- Wrapper for slides -->
@@ -50,21 +47,18 @@
 		    </div>
 		
 		    <div class="item">
-		      <img src="img/ftwd.jpg" alt="twd">
+		      <img src="img/dexter.jpg" alt="twd">
 		    </div>
 		
 		    <div class="item">
-		      <img src="img/arrow.jpg" alt="">
+		      <img src="img/banner1.jpg" alt="">
 		    </div>
 		
 		    <div class="item">
 		      <img src="img/game.jpg" alt="">
 		    </div>
 		 		  
-			<div class="item">
-			      <img src="img/gothan.jpg" alt="Flower">
-			</div>
-		  </div>
+		</div>
 		
 		  <!-- Left and right controls -->
 		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -75,6 +69,29 @@
 		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
-	</div>
+		  
+		 </div>
+		 
+		 <br>
+		 	<div class="titulos">Consultar por Gênero</div>
+	
+				
+		 <div class="busca">
+		  	<div class="col-lg-6">
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Suspense, Terror...">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">Procurar</button>
+      			</span>
+		  		</div><!-- /input-group -->
+			  </div><!-- /.col-lg-6 -->
+			</div>
+		  </div>
+		  <br>
+		  
+		  <foot>
+		  <p class="rodape">2015, Faculdade dos Guarapes </p>
+		  </foot>
+		  
 </body>
 </html>
