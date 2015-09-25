@@ -23,7 +23,7 @@
 			</div>
 			
 		</div>
-		<div style="width: 100%; height: 100px; background-color: #222222;">
+		<div style="width: 100%; height: 100px; background-color: #696969;">
 	      <div class="content">
 	   	   <h2 class="m_3">Catálogo de Séries</h2>
       	       <div class="movie_top">
