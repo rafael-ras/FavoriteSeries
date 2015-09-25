@@ -35,17 +35,40 @@
 		}
 	</style>
 </head>
-<body>
+<body>	
+	<!-- FACEBOOK LOGIN -->
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '440017689524429',
+	      xfbml      : true,
+	      version    : 'v2.4'
+	    });
+	  };
 	
-		<div style="width: 100%; height: 22%; background-color: #000000;">
-			<div style="padding-left: 60px; /* line-height: 150px; */ padding-top: 52px;">
-				<p style="font-family: Times New Roman, Times, serif; color: #FFFFFF; font-size: 21pt; float: left; background-color: gray; /* height: 91px; */ padding: 0 7px 0 7px; margin-right: 6px;">
-					FS
-				</p>
-				<p style="font-family: Times New Roman, Times, serif; color:#FFFFFF; font-size:21pt;">
-					FavoriteSeries
-				</p>					
-			</div>			
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+	
+		<div style="width: 100%; height: 22%; background-color: #B31A19; display: table;">
+			<div style="width:100%; display:table-cell; vertical-align: middle;">			
+				<div style="float:right;margin: 13px 15px 0 0;">
+					<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
+				</div>
+				<div style="padding-left: 60px; padding-top: 13px;">
+					<p style="font-family: Times New Roman, Times, serif; color: #FFFFFF; font-size: 21pt; float: left; background-color: gray; /* height: 91px; */ padding: 0 7px 0 7px; margin-right: 6px;">
+						FS
+					</p>
+					<p style="font-family: Times New Roman, Times, serif; color:#FFFFFF; font-size:21pt;">
+						FavoriteSeries
+					</p>					
+				</div>	
+			</div>		
 		</div>
 		
 		<div class="container fill" style="margin: 0px; margin-top: 0px; padding: 0px; height: 78% !important;">
