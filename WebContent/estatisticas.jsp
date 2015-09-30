@@ -78,7 +78,7 @@
 		<div style="width: 35%; height: 5%; background-color: blue; display: table;">7 Horas</div>
 		<br/><br/><br/>
 		<font color="white">The Big Bang Theory</font>
-		<div style="width: 55%; height: 5%; background-color: blue; display: table;">16 Horas</div>
+		<div style="width: 55%; height: 5%; background-color: blue; display: table;">16 Horas</div> 
 		
 		</div>  
 			  
