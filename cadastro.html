@@ -1,0 +1,222 @@
+<!doctype html private "Vagner Fernandes">
+
+
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Favorite Series</title>
+
+    <!-- Arquivos CSS -->
+    <link href="http://cdn-na.infragistics.com/igniteui/2015.1/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="http://cdn-na.infragistics.com/igniteui/2015.1/latest/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+    <!-- Arquivos JavaScript -->
+    <script src="http://cdn-na.infragistics.com/igniteui/2015.1/latest/js/infragistics.core.js"></script>
+    <script src="http://cdn-na.infragistics.com/igniteui/2015.1/latest/js/infragistics.lob.js"></script>
+
+	
+	
+<style>
+#fundo1 {
+position: fixed;
+left: 0px;	
+right: 100px;
+top: 120px;
+width: 100%;
+height: 90%;
+}
+</style>
+
+<style>
+#generos1 {
+position: fixed;
+left: 120px;
+top: 220px;
+top: 220px;
+font-size: 18px;
+color:#FFFFFF;
+font-family:Aharoni;
+}
+</style>
+
+<style>
+#generos2 {
+position: fixed;
+left: 500px;
+top: 220px;
+font-size: 18px;
+color:#FFFFFF;
+font-family:Aharoni;
+}
+</style>
+
+<style>
+#series {
+position: fixed;
+left: 800px;
+top: 220px;
+font-size: 18px;
+color:#FFFFFF;
+font-family:Aharoni;
+}
+</style>
+
+<style>
+#checklist {
+position: fixed;
+left: 900px;
+top: 150px;
+font-size: 20px;
+color:#FFFFFF;
+font-family:Aharoni;
+}
+</style>
+
+<style>
+#button {
+position: fixed;
+right: 0px;
+top: 610px;
+font-size: 20px;
+color:#FFFFFF;
+font-family:Aharoni;
+}
+</style>
+
+<style>
+#logo {
+position: fixed;
+left: 450px;
+top: 16px;
+height: 30px;
+}
+
+</style>
+
+<img src="./img/fs.png" id="logo">
+
+</head>
+<body background="img/bg.jpg">
+
+<div id="titulo">
+<center><span style="color:#FFFFFF;font-family:Aharoni;font-size:48px; position: fixed; top: 10px; left: 550px">Favorite Series</span></center>
+</div>
+
+<body>
+	
+ <br/><br/><br/><center> <img id="fundo1" src="img/fd.jpg" alt="" /> </center>
+ 
+ 
+ 
+ <div id="titulo">
+ <center><span style="color:#FFFFFF;font-family:Aharoni;font-size:25px; position: fixed; top: 150px; left: 160px">Quais os seus genêros favoritos?</span></center>
+ </div>
+ 
+ <div id="generos1">
+	
+	<input type="checkbox"> Ação </input><br/><br/>
+	<input type="checkbox" /> Amimação <br /><br/>
+	<input type="checkbox" /> Aventura <br /><br/>
+	<input type="checkbox" /> Comédia <br /><br/>
+	<input type="checkbox" /> Comédia Dramatica <br/><br/>
+	<input type="checkbox" /> Comédia Musical <br/><br/>
+	<input type="checkbox" /> Crime <br/><br/>
+	<input type="checkbox" /> Documentário <br/><br/>
+	<input type="checkbox" /> Drama <br/><br/>
+	<input type="checkbox" /> Espionagem <br/>
+		
+ </div>
+ 
+ <div id="generos2">
+ 
+	<input type="checkbox" /> Esporte <br/><br/>
+	<input type="checkbox" /> Esporte  <br/><br/>
+	<input type="checkbox" /> Família <br/><br/>
+	<input type="checkbox" /> Fantasia <br/><br/>
+	<input type="checkbox" /> Faroeste <br/><br/>
+	<input type="checkbox" /> Ficção Ciêntífica <br/><br/>
+	<input type="checkbox" /> Guerra <br/><br/>
+	<input type="checkbox" /> Musicais <br/><br/>
+	<input type="checkbox" /> Policial <br/><br/>
+	<input type="checkbox" /> Terror <br/><br/>
+ 
+
+
+ 
+</div>
+
+</select>
+
+
+
+
+<div id="checklist">
+
+
+
+    <style>        
+        .combo-label {margin-bottom:.5em;}
+    </style>
+
+    <h4 class="combo-label">Quais series você já assistiu?</h4>
+    <div id="checkboxSelectCombo"></div>
+
+    <script>
+
+        var series = [
+            { Name: "Fringe" },
+            { Name: "Orphan Black" },
+            { Name: "Lost" },
+            { Name: "Grimm" },
+            { Name: "Game of Thrones" },
+            { Name: "The Walking Dead" },
+            { Name: "Motel Bates" },
+            { Name: "NCIS" },
+            { Name: "Dr House" },			
+			{ Name: "FlashPoint" },
+            { Name: "Prision Break" },
+            { Name: "Magnifíca 70" },
+            { Name: "Spartacus" },
+            { Name: "Glee" },
+            { Name: "Narcos" },
+            { Name: "The Blacklist" },
+            { Name: "Bitten" },
+            { Name: "Kyle XY" },
+			{ Name: "Arrow" },
+            { Name: "Revenge" },
+            { Name: "Blindstop" },
+            { Name: "Vampire Diares" },
+            { Name: "Super Natural" },
+        ];
+
+        $(function () {         
+
+        
+            $("#checkboxSelectCombo").igCombo({
+                width: "370px",
+                dataSource: series,
+                textKey: "Name",
+                valueKey: "Name",
+                multiSelection: {
+                    enabled: true,
+                    showCheckboxes: true
+                }
+            });
+
+        });
+
+    </script>
+
+	
+</div>
+
+
+<a href="./sugestoes.html"><img src="img/button.png" id="button" alt="" style="width:202px;height:46px;"></a>	
+
+
+</body>
+</html>
