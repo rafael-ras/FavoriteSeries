@@ -102,7 +102,8 @@
 						</div>
 					</td>
 			</tr>
-					
+			<br>	
+			
 <div class="texto"> Ranking</div>		
 <div dir="rtl">
   <div class="star">
@@ -117,9 +118,12 @@
     <label for="star2-4" class="star-item star-item-4">4 stars</label>
     <label for="star2-5" class="star-item star-item-5">5 stars</label>
   </div>
+  <form action="Home.jsp">
   	<span class="input-group-btn">
-     	<button class="btn btn-default" type="button">Votar</button>
+     	<!-- <button class="btn btn-default"  type="button" onclick="" href="http://www.google.com">Votar</button> -->
+     	<input type="submit" class="btn btn-default">Ir</input>
 	</span>
+	</form>
 </div>
 			
 	
