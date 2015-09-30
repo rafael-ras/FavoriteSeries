@@ -27,6 +27,32 @@
 	font-size: 30px; 
 	margin: 35px 0 40px 0;
 }
+/***** indicações*****/
+
+
+.carousel-inner{
+	left:80px;
+	width: 90%;
+	height: 400px;
+}
+
+.col-lg-6{
+	left:350px;
+	
+}
+
+.titulos{
+	width: 100%; 
+	text-align: center; 
+	font-size: 30px; 
+	margin: 35px 0 40px 0;	
+}
+
+.rodape{
+	margin: 204px 561px 10px;
+}
+
+
 
 
 /* 
@@ -112,4 +138,103 @@
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
     }
+}
+
+/* estrela para votacao */
+/* Estilo das estrelas quando elas estão "ativadas" checked */
+.radio-1:checked ~ .star-item-1:before,
+.radio-1:focus ~ .star-item-1:before, .radio-2:checked ~ .star-item-1:before,
+.radio-2:focus ~ .star-item-1:before, .radio-2:checked ~ .star-item-2:before,
+.radio-2:focus ~ .star-item-2:before, .radio-3:checked ~ .star-item-1:before,
+.radio-3:focus ~ .star-item-1:before, .radio-3:checked ~ .star-item-2:before,
+.radio-3:focus ~ .star-item-2:before, .radio-3:checked ~ .star-item-3:before,
+.radio-3:focus ~ .star-item-3:before, .radio-4:checked ~ .star-item-1:before,
+.radio-4:focus ~ .star-item-1:before, .radio-4:checked ~ .star-item-2:before,
+.radio-4:focus ~ .star-item-2:before, .radio-4:checked ~ .star-item-3:before,
+.radio-4:focus ~ .star-item-3:before, .radio-4:checked ~ .star-item-4:before,
+.radio-4:focus ~ .star-item-4:before, .radio-5:checked ~ .star-item-1:before,
+.radio-5:focus ~ .star-item-1:before, .radio-5:checked ~ .star-item-2:before,
+.radio-5:focus ~ .star-item-2:before, .radio-5:checked ~ .star-item-3:before,
+.radio-5:focus ~ .star-item-3:before, .radio-5:checked ~ .star-item-4:before,
+.radio-5:focus ~ .star-item-4:before, .radio-5:checked ~ .star-item-5:before,
+.radio-5:focus ~ .star-item-5:before, .star-item:hover:before, .star:hover .star-item:before {
+  color: #FFE000;
+}
+
+/* Estilo das estrelas quando elas estão "desativadas" unchecked */
+.star-item:before, .star-item:hover ~ .star-item:before {
+  color: #CCC;
+}
+
+/*
+  Esconde o texto de elementos
+  source https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+*/
+.star-item {
+  font: "1/1" a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/*
+  Esconde um elemento de forma que continue acessível via teclado
+  http://getbootstrap.com/css/#helper-classes-screen-readers
+*/
+.radio {
+  position: absolute;
+  top: -999999em;
+  left: auto;
+  width: 3px;
+  height: 3px;
+  overflow: hidden;
+}
+
+/*
+  Escreve os seletores das estrelas para marcalas como "ativas" checked, quando um input radio 3 está "ativo" checked, as estrelas 3, 2 e 1 devem aparecer "ativas", esse loop escreve essas classes para nós.
+*/
+.star {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  pointer-events: none;
+  /* max-width: 5em; */
+}
+
+.star-item {
+  cursor: pointer;
+  display: inline-block;
+  pointer-events: initial;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  line-height: 100%;
+  /* Estilo padrão das estrelas */
+  /* Ao passar o mouse em uma estrela, essa estrela fica amarela */
+  /* Ao passar o mouse em uma estrella, as estrelas adjacentes ficam como unchecked (Isso é um truque para não precisar mudar a ordem de disposição dos elementos para rtl) */
+}
+.star-item:before {
+  -webkit-transition: color 200ms;
+          transition: color 200ms;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  will-change: color;
+  content: '\2605';
+}
+
+/* Ao passar o mouse no container das estrelas, todos os itens ficam como marcados */
+/* Esconde os input radio de forma que continuem acessíveis via teclado */
+/* Ordena os itens da direita para a esquerda */
+.star:dir(rtl) .star-item, .star.rtl .star-item {
+  direction: rtl;
+}
+
+body{
+	color :white;
+	background-color: black;
 }
