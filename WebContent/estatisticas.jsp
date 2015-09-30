@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Tela Inicial</title>
+	<title>Estatisticas</title>
 	<script type="text/javascript" src="script/jquery-2.1.4.min.js"></script>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -36,8 +36,12 @@
 	</style>
 </head>
 <body style="background-color:black;">	
+	<!-- Menu padrão -->
+	<jsp:include page="/Header.jspf"/>
+	
+	
 	<!-- FACEBOOK LOGIN -->
-	<script>
+	<!--<script>
 	  window.fbAsyncInit = function() {
 	    FB.init({
 	      appId      : '440017689524429',
@@ -53,6 +57,7 @@
 	     js.src = "//connect.facebook.net/en_US/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
+
 	</script>
 	
 		<div style="width: 100%; height: 22%; background-color: #B31A19; display: table;">
@@ -69,18 +74,32 @@
 					</p>					
 				</div>	
 			</div>		
-		</div>
-		<br/><br/><br/>
-		<font color="white">Demolidor</font>
-		<div style="width: 20%; height: 5%; background-color: blue; display: table;">4 Horas</div>
-		<br/><br/><br/>
-		<font color="white">Narcos</font>
-		<div style="width: 35%; height: 5%; background-color: blue; display: table;">7 Horas</div>
-		<br/><br/><br/>
-		<font color="white">The Big Bang Theory</font>
-		<div style="width: 55%; height: 5%; background-color: blue; display: table;">16 Horas</div> 
+		</div>-->
 		
-		</div>  
+		<!-- Título da tela -->
+		<div class="titulos">Estatísticas </div>
+		
+		<!-- inicio do código -->
+		<br/><br/><br/>
+		
+		<img alt="" src="img/demolidor.jpg">
+			<div>
+				<font>Demolidor</font>
+				<div style="width: 20%; height: 5%; background-color: blue; display: table;">4 Horas</div>
+			</div>
+		<br/><br/><br/>
+		
+		<img alt="" src="img/narcos.jpg">
+			<div>
+				<font>Narcos</font>
+				<div style="width: 35%; height: 5%; background-color: blue; display: table;">7 Horas</div>
+			</div>
+		<br/><br/><br/>
+		
+		<img alt="" src="img/bigbang.jpg">
+			<div><font>The Big Bang Theory</font>
+				<div style="width: 55%; height: 5%; background-color: blue; display: table;">16 Horas</div> 
+			</div>  
 			  
 						  
 			  			  
