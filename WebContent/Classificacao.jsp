@@ -18,14 +18,9 @@
 		    });
 		});
 	</script>
-	<style type="text/css">
-		.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
-		  background-color: #222222;
-		  color:#eeeeee;
-		}
-	</style>
+
 </head>
-<body style="background-color:#000000;color:white;">
+<body style="background-color:#000000;color:white;"> <!--background="img/super.jpg" -->
 	<jsp:include page="/Header.jspf"/>
 	
 	<div class="titulos">Classificar </div>
@@ -34,10 +29,11 @@
 	
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="0"></li>
 		    <li data-target="#myCarousel" data-slide-to="1"></li>
 		    <li data-target="#myCarousel" data-slide-to="2"></li>
 		    <li data-target="#myCarousel" data-slide-to="3"></li>
+		    <li data-target="#myCarousel" data-slide-to="4"></li>
 		  </ol>
 		
 		  <!-- Wrapper for slides -->
@@ -57,6 +53,10 @@
 		    <div class="item">
 		      <img src="img/game.jpg" alt="">
 		    </div>
+		    
+		      <div class="item">
+		      <img src="img/super.jpg" alt="">
+		    </div>
 		 		  
 		</div>
 		
@@ -72,15 +72,12 @@
 		  
 		 </div>
 		 <br>
-		 <br>
-		 <div class="styleCombobox"> 
-			 <div class="texto" > Selecione a série para classificar: 	
-			 	<select title="Selecione" style="width : 500px;" > 
-			 		<option value=1 selected>The Walking Dead</option> 		 		
+		 <br>		
+			<div class="texto" > Selecione a série para classificar: 	
+			 	<select title="Selecione" style="width : 500px;" style="float:left;"> 
+			 		<option value= "1" selected>The Walking Dead</option> 		 		
 			 	</select> 
-			</div>
-		 </div>
-		 <br>
+			</div>		 
 		 <br>
 		 	<tr class="clickable-row" data-href="http://www.google.com" style="cursor:pointer;">
 					<td>
@@ -93,19 +90,21 @@
 							</div>
 							<div class="lista-filme-item-conteudo">
 								Sinopse: The Walking Dead foi desenvolvida por Frank Darabont e baseada na série de quadrinhos de mesmo nome por Robert Kirkman.</BR>
-								Primeiro: episódio: 31 de outubro de 2010.</BR>
-								Tema musical: The Walking Dead theme song.</BR>
+								Primeiro: episódio: 31 de outubro de 2010.<BR/>
+								Tema musical: The Walking Dead theme song.<BR/>
 								Criador: Frank Darabont.</BR>
-								Elenco: Norman Reedus, Andrew Lincoln, Steven Yeun, mais.</BR>
-								Emissoras originais: AMC, AMC Networks.
+								Elenco: Norman Reedus, Andrew Lincoln, Steven Yeun, mais.<BR/>
+								Emissoras originais: AMC, AMC Networks.<BR/>
 							</div>
 						</div>
 					</td>
-			</tr>
-					
-<div class="texto"> Ranking</div>		
-<div dir="rtl">
-  <div class="star">
+			</tr><BR/>
+
+<div style="float:left;">
+<font>Ranking</font>
+<div>
+
+  <div class="star" style="float:left;">
     <input name="rating2" id="star2-1" value="1" type="radio" class="radio radio-1"/>
     <input name="rating2" id="star2-2" value="2" type="radio" class="radio radio-2"/>
     <input name="rating2" id="star2-3" value="3" type="radio" class="radio radio-3"/>
@@ -117,17 +116,12 @@
     <label for="star2-4" class="star-item star-item-4">4 stars</label>
     <label for="star2-5" class="star-item star-item-5">5 stars</label>
   </div>
-  	<span class="input-group-btn">
-     	<button class="btn btn-default" type="button">Votar</button>
+  	<span class="input-group-btn">  	
+    	<button class="btn btn-default" type="button">Votar</button>    
 	</span>
-</div>
-			
-	
-		
-		  
-  <foot>
-  	<p class="rodape">2015, Faculdade dos Guarapes </p>
-  </foot>
-		  
+	</div>		
+</div>		
+	  
+  	<p class="rodape">2015, Faculdade dos Guarapes </p>	  
 </body>
 </html>
