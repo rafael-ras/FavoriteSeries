@@ -214,6 +214,7 @@
   height: 1em;
   overflow: hidden;
   line-height: 100%;
+  font-size: 20px;
   /* Estilo padrão das estrelas */
   /* Ao passar o mouse em uma estrela, essa estrela fica amarela */
   /* Ao passar o mouse em uma estrella, as estrelas adjacentes ficam como unchecked (Isso é um truque para não precisar mudar a ordem de disposição dos elementos para rtl) */
